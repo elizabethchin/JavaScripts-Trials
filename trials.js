@@ -10,9 +10,9 @@ const addresses = ["123 Main Street", "683 Sutter Street", "1600 Pennsylvania Av
 
 // Add some phone numbers to our map
 const phoneNumbers = new Map([
-    ['home', 510-867-5309],
-    ['mobile', 415-555-1212],
-    ['business', 415-123-4567]
+    ['home', '510-867-5309'],
+    ['mobile', '415-555-1212'],
+    ['business', '415-123-4567']
     ]);
 
 // ///////////////////////////////////////////////////////
@@ -35,32 +35,71 @@ function showAddresses(addresses){
         console.log(address);
     }
 }
-console.log(showAddresses(['123 Sutter Street', '683 Sutter Street', '1600 Pennsylvania Ave']))
+// console.log(showAddresses(['123 Sutter Street', '683 Sutter Street', '1600 Pennsylvania Ave']))
 
 // Add function to print phone types and numbers
-function showPhoneNums(phoneNum){
+function showPhoneNums(phoneNum){ 
     console.log('Phone Numbers:');
-    for ()
+    for (const num of phoneNum){
+    console.log(num)
+    console.log(`${num[0]} : ${num[1]}`);
+    }
 }
+
+// console.log(showPhoneNums(phoneNumbers))
+
 
 
 // ///////////////////////////////////////////////////////
 // Transactions:
 
 // Create an empty map of transactions
-
+const transactions = new Map();
 
 // Add function to add transactions
-
+function addTransactions(date, amount) {
+	return transactions.set(date, amount)
+}
 
 // Use the function to add transactions
+addTransactions('May-2', -500)
+addTransactions('May-13', 1200)
+addTransactions('May-15', -100)
+addTransactions('May-21', -350)
+addTransactions('May-29', 2200)
 
 
 // Add function to show balance status
 
+function showBalanceStatus(balance) {
+	console.log('Balance: ')
+	if (balance < 0){
+		console.log('YOU ARE OVERDRAWN');
+	}else if (balance < 20) {
+		console.log('Warning: You are close to zero balance');
+	}else {
+		console.log('Thank you for your business.');
+	}
+}
 
 // Add function to show transactions
+function showTransactions(map, begBal) {
+	console.log(begBal);
+	let depositType;
+	let runningBalance = 0;
+	for (const transaction of transactions) {
+		runningBalance += transaction[1];
+		if (transaction[1] < 0) {
+			depositType = 'withdrawal';
+		} else {
+			depositType = "deposit"
+		}
+	}
+}
 
+console.log(`${transaction[0]}, ${transaction[1]}`);{
+
+console.log()
 
 // ///////////////////////////////////////////////////////
 // All Customer Info:
