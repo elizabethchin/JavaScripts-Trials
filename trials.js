@@ -1,6 +1,13 @@
 // ///////////////////////////////////////////////////////
 // PART 1
 // Account information:
+function accountInformation(name, number, businessName) {
+    console.log(`Account Holder Name: ${name}`);
+    console.log(`Account Holder Number: ${number}`);
+    console.log(`Business Name: ${businessName}`);
+}
+
+//console.log(accountInformation('Balloonicorn', 123456, "Balloonicorn's Cupcake Shop"))
 
 let accountHolder = "Balloonicorn";
 const accountNumber = "123456";
@@ -17,7 +24,7 @@ const phoneNumbers = new Map();
 // ///////////////////////////////////////////////////////
 // Create User Info Display:
 
-// Add function to print account information 
+// Add function to print account information
 
 
 // Add function to print all addresses, including a header
@@ -81,7 +88,7 @@ const phoneNumbers = new Map();
 // Write a function to return the address of a given person
 
 
-// Add a function to create an employee schedule for the week 
+// Add a function to create an employee schedule for the week
 
 
 // Add a function for weekly hours
