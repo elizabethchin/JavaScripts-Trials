@@ -38,6 +38,10 @@ function showAddresses(addresses){
 console.log(showAddresses(['123 Sutter Street', '683 Sutter Street', '1600 Pennsylvania Ave']))
 
 // Add function to print phone types and numbers
+function showPhoneNums(phoneNum){
+    console.log('Phone Numbers:');
+    for ()
+}
 
 
 // ///////////////////////////////////////////////////////
