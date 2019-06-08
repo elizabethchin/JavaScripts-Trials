@@ -1,6 +1,24 @@
 // ///////////////////////////////////////////////////////
 // PART 1
 // Account information:
+
+let accountHolder = "Balloonicorn";
+const accountNumber = "123456";
+let businessName = "Balloonicorn's Cupcake Shop";
+
+const addresses = ["123 Main Street", "683 Sutter Street", "1600 Pennsylvania Ave"];
+
+// Add some phone numbers to our map
+const phoneNumbers = new Map([
+    ['home', 510-867-5309],
+    ['mobile', 415-555-1212],
+    ['business', 415-123-4567]
+    ]);
+
+// ///////////////////////////////////////////////////////
+// Create User Info Display:
+
+// Add function to print account information
 function accountInformation(name, number, businessName) {
     console.log(`Account Holder Name: ${name}`);
     console.log(`Account Holder Number: ${number}`);
@@ -9,26 +27,15 @@ function accountInformation(name, number, businessName) {
 
 //console.log(accountInformation('Balloonicorn', 123456, "Balloonicorn's Cupcake Shop"))
 
-let accountHolder = "Balloonicorn";
-const accountNumber = "123456";
-let businessName = "Balloonicorn's Cupcake Shop";
-
-const addresses = ["123 Main Street", "683 Sutter Street", "1600 Pennsylvania Ave"];
-
-const phoneNumbers = new Map();
-
-// Add some phone numbers to our map
-
-
-
-// ///////////////////////////////////////////////////////
-// Create User Info Display:
-
-// Add function to print account information
-
 
 // Add function to print all addresses, including a header
-
+function showAddresses(addresses){
+    console.log(`Addresses:`);
+    for (const address of addresses){
+        console.log(address);
+    }
+}
+console.log(showAddresses(['123 Sutter Street', '683 Sutter Street', '1600 Pennsylvania Ave']))
 
 // Add function to print phone types and numbers
 
